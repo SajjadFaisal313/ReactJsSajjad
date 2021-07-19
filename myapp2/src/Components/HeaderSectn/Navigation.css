@@ -1,0 +1,16 @@
+nav{
+    background-color: brown;
+    text-decoration: none;
+    padding: 6px;
+    box-shadow: 0 0 10px black;
+}
+a{
+    color: cornsilk;
+    margin: 10px;
+}
+button{
+    margin: 10px;
+}
+input{
+    margin: 10px;
+}
