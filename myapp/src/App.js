@@ -1,7 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
 import {CourseInfo} from "./components/CourseInfo";
-import {MyInfo} from "./components/MyInfo"
+// import {MyInfo} from "./components/MyInfo"
 
 function App() {
   return (
