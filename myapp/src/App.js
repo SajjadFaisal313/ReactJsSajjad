@@ -22,7 +22,7 @@ function App() {
      <td><CourseInfo CourseName="B.E (Civil)" Institute="DY Patil" City="Pune" Contact="9745658986"/></td>  
      <td><CourseInfo CourseName="B.E (Electrical)" Institute="GECA" City="Aurangabad" Contact="9356446645"/></td> 
      </tr>
-      <MyInfo />
+      {/* <MyInfo /> */}
     </div>
   );
 }
