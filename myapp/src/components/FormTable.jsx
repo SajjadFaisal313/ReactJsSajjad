@@ -1,7 +1,7 @@
 import React from 'react';
 import {Row ,Col, Card, Form, Button} from "react-bootstrap";
 
-export const Table = () => {
+export const FormTable = () => {
     return (
         <div>
             <Row>

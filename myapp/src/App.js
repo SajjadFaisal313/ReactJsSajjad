@@ -1,9 +1,14 @@
 import './App.css';
-import Table from './components/Table';
+import { Details } from './components/Details';
+// import {FormTable} from './components/FormTable';
+import {FormTable} from "./components/FormTable"
 
 function App() {
   return (
-  <Table />
+  <div className="App">
+    {/* <FormTable /> */}
+    <Details/>
+  </div>
   );
 }
 
