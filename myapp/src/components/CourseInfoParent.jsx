@@ -1,7 +1,8 @@
-    import FormImpl from "react-bootstrap/esm/Form";
-import {CourseInfo} from "./components/CourseInfo";
+    import React from "react";
+    // import FormImpl from "react-bootstrap/esm/Form";
+    import {CourseInfo} from "./components/CourseInfo";
     
-    export {CourseInfoParent} from 
+    export const CourseInfoParent =()=>{ 
     <div className="App">
        <h1>List Of Institutions</h1>
        <tr>
@@ -21,3 +22,4 @@ import {CourseInfo} from "./components/CourseInfo";
      </tr>
       <MyInfo />
     </div>
+    }
