@@ -14,7 +14,7 @@ export const Counter = () => {
                         <h3>{cntr}</h3>
                     </td>
                     <td>
-                       <Button variant="primary" onClick={() => cntr > 10 && setCntr(cntr-1)}>-</Button>
+                       <Button variant="primary" onClick={() => cntr < 10 && setCntr(cntr-1)}>-</Button>
                     </td>
                 </tr>
             </table>
