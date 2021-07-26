@@ -1,13 +1,12 @@
-export const employeereducer = {
+export const EmployeeReducer = {
     Data:
     [
         {
-            firstName: "Faisal"
-            LastName: "Ikramuddin"
-            FirstLine: "Al-Ameen Nagar"
-             SecLine: "Jalkot Road"
-             CityName: "Udgir"
-        }
-    ]
-
+            firstName: "Faisal",
+            lastName: "Ikramuddin",
+            firstLine: "Al-Ameen Nagar",
+            secLine: "Jalkot Road",
+            cityName: "Udgir"
+        },
+    ],
 }
