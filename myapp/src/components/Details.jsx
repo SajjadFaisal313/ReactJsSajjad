@@ -11,7 +11,7 @@ export const Details = () => {
                         <Row>
                             <Col>
                             <Form>
-                                <Form.group >
+                                <Form.Group >
                                     <Row>
                                         <Col>
                                         <Form.Control type="text" placeholder="First Name">
@@ -47,7 +47,7 @@ export const Details = () => {
                                         </Form.Control>
                                         </Col>
                                     </Row>
-                                </Form.group>
+                                </Form.Group>
                                 </Form>
                                 </Col>
                         </Row>
