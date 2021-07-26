@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import { Row, Col, Form, Button, Card } from "react-bootstrap";
 
+import {EmployeeReducer} from "../Reducers/EmployeeReducer"
 export const Details = () => {
-  const [namea, setNamea] = useState("--");
-  const [nameb, setNameb] = useState("--");
+    const {firstName, LastName, FirstLine, SecLine, CityName} =
+    EmployeeReducer.data
+  const [namea, setNamea] = useState("-");
+  const [nameb, setNameb] = useState("-");
   const [line1, setLine1] = useState("--");
   const [line2, setLine2] = useState("--");
   const [city, setCity] = useState("--");
@@ -23,6 +26,7 @@ export const Details = () => {
                           type="text"
                           placeholder="First Name"
                           onChange={(e) => setNamea(e.target.value)}
+                          value={Namea}
                         ></Form.Control>
                       </Col>
                     </Row>
@@ -32,6 +36,7 @@ export const Details = () => {
                           type="text"
                           placeholder="Last Name"
                           onChange={(e) => setNameb(e.target.value)}
+                          value={Nameb}
                         ></Form.Control>
                       </Col>
                     </Row>
@@ -46,6 +51,7 @@ export const Details = () => {
                           type="text"
                           placeholder="Line 1"
                           onChange={(e) => setLine1(e.target.value)}
+                          value={line1}
                         ></Form.Control>
                       </Col>
                     </Row>
@@ -55,6 +61,7 @@ export const Details = () => {
                           type="text"
                           placeholder="Line 2"
                           onChange={(e) => setLine2(e.target.value)}
+                          value={line2}
                         ></Form.Control>
                       </Col>
                     </Row>
@@ -64,6 +71,7 @@ export const Details = () => {
                           type="text"
                           placeholder="City"
                           onChange={(e) => setCity(e.target.value)}
+                          value={city}
                         ></Form.Control>
                       </Col>
                     </Row>
@@ -88,13 +96,13 @@ export const Details = () => {
                   </Col>
                 </Row>
                 <Row>
-                  <Col>{`${line1},`}</Col>
+                  <Col>{`${line1} `}</Col>
                 </Row>
                 <Row>
-                  <Col>{`${line2},`}</Col>
+                  <Col>{`${line2} `}</Col>
                 </Row>
                 <Row>
-                  <Col>{`${city}`}</Col>
+                  <Col>{`${city} `}</Col>
                 </Row>
               </Card>
             </Col>
