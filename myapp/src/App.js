@@ -1,11 +1,10 @@
 import './App.css';
-// import { Details } from './components/Details';
-import {FormTable} from './components/FormTable';
+import { Details } from './components/Details';
 
 function App() {
   return (
   <div className="App">
-    <FormTable />
+    <Details />
   </div>
   );
 }
