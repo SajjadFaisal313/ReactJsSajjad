@@ -108,7 +108,9 @@ export const Details = () => {
             </Col>
           </Row>
         </Col>
-        <Col md={3}></Col>
+        <Col md={3}>
+          <Image src={`Asset/bulb${bulbState}.jpg`}></Image>
+        </Col>
       </Row>
     </div>
   );
