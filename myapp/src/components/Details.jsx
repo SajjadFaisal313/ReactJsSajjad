@@ -121,7 +121,7 @@ export const Details = () => {
         </Col>
         <Col md={3}></Col>
       </Row>
-      <Button>ChangeMe</Button>
+      {/* <Button>ChangeMe</Button> */}
     </div>
   );
 };

@@ -1,4 +1,5 @@
-import React from "react";
+// import React from "react";
+import React, { useState } from "react";
 import { Row, Col, Form, Button } from "react-bootstrap";
 import "./Details.css";
 
@@ -50,6 +51,7 @@ export const FormTable = () => {
         </Col>
         <Col md={3}></Col>
       </Row>
+      <Button>ChangeMe</Button>
     </div>
   );
 };
