@@ -13,17 +13,19 @@ export const Details = () => {
   const [line2, setLine2] = useState(secLine);
   const [city, setCity] = useState(cityName);
 
-  const [bulbstate, setBulbState] =useState("on");
+  const [bulbstate, setBulbState] = useState("on");
 
   return (
     <div>
       <Row>
         <Col md={3} className="bulbcolmn">
-        <Image src={`Imagess/bulb${bulbstate}.png`}
-          height="70px"
-          onClick={() =>
-          bulbstate === "off" ? setBulbState("on") : setBulbState("off")
-          }></Image>
+          <Image
+            src={`Imagess/bulb${bulbstate}.png`}
+            height="70px"
+            onClick={() =>
+              bulbstate === "off" ? setBulbState("on") : setBulbState("off")
+            }
+          ></Image>
         </Col>
         <Col md={3}>
           <Card id="details">
@@ -117,9 +119,9 @@ export const Details = () => {
             </Col>
           </Row>
         </Col>
-        <Col md={3}>
-        </Col>
+        <Col md={3}></Col>
       </Row>
+      <Button>ChangeMe</Button>
     </div>
   );
 };
