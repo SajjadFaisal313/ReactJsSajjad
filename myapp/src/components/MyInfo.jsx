@@ -1,5 +1,5 @@
 export const MyInfo=()=>{
     return(
-        <b>My name is Faisal</b>
+       <h1> <b>My name is Faisal</b> </h1>
     )
 }

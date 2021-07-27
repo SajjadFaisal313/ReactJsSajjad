@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Row, Col, Form, Button, Card } from "react-bootstrap";
+import { Row, Col, Form, Button, Card, Image } from "react-bootstrap";
 
 import "./Details.css";
 
@@ -12,10 +12,19 @@ export const Details = () => {
   const [line1, setLine1] = useState(firstLine);
   const [line2, setLine2] = useState(secLine);
   const [city, setCity] = useState(cityName);
+
+  const [bulbstate, setBulbState] =useState("on");
+
   return (
     <div>
       <Row>
-        <Col md={3}></Col>
+        <Col md={3} className="bulbcolmn">
+        <Image src={`Imagess/bulb${bulbstate}.png`}
+          height="70px"
+          onClick={() =>
+          bulbstate === "off" ? setBulbState("on") : setBulbState("off")
+          }></Image>
+        </Col>
         <Col md={3}>
           <Card id="details">
             <Row>
@@ -109,7 +118,6 @@ export const Details = () => {
           </Row>
         </Col>
         <Col md={3}>
-          <Image src={`Asset/bulb${bulbState}.jpg`}></Image>
         </Col>
       </Row>
     </div>

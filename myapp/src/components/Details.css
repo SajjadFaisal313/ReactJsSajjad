@@ -11,5 +11,8 @@
   padding: 1px;
 }
 #details {
-  background-color: rgba(129, 224, 211, 0.562);
+  background-color: rgb(75, 235, 181);
+}
+.bulbcolmn{
+    text-align: right;
 }
