@@ -1,7 +1,15 @@
-.form-control{
-    margin: 7px;
-    padding: 6px;
+.form-control {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 5px;
 }
-.col-md-4{
-    width: auto;
+.btn.btn-primary {
+  margin: 10px;
+}
+.form-label {
+  margin: 7px;
+  padding: 1px;
+}
+#details {
+  background-color: rgba(129, 224, 211, 0.562);
 }

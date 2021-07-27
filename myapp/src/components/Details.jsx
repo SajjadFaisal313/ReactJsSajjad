@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Row, Col, Form, Button, Card } from "react-bootstrap";
 
-import "./Details.css"
+import "./Details.css";
 
 import { EmployeeReducer } from "../Reducers/EmployeeReducer";
 export const Details = () => {
@@ -15,75 +15,73 @@ export const Details = () => {
   return (
     <div>
       <Row>
-        <Col md={2}></Col>
-        <Col md={4}>
-          <Card>
+        <Col md={3}></Col>
+        <Col md={3}>
+          <Card id="details">
             <Row>
               <Col>
-                <Form>
-                  <Form.Group>
-                    <Row>
-                      <Col>
-                        <Form.Control
-                          type="text"
-                          placeholder="First Name"
-                          onChange={(e) => setNamea(e.target.value)}
-                          value={namea}
-                        ></Form.Control>
-                      </Col>
-                    </Row>
-                    <Row>
-                      <Col>
-                        <Form.Control
-                          type="text"
-                          placeholder="Last Name"
-                          onChange={(e) => setNameb(e.target.value)}
-                          value={nameb}
-                        ></Form.Control>
-                      </Col>
-                    </Row>
-                    <Row>
-                      <Col>
-                        <Form.Label>Address:</Form.Label>
-                      </Col>
-                    </Row>
-                    <Row>
-                      <Col>
-                        <Form.Control
-                          type="text"
-                          placeholder="Line 1"
-                          onChange={(e) => setLine1(e.target.value)}
-                          value={line1}
-                        ></Form.Control>
-                      </Col>
-                    </Row>
-                    <Row>
-                      <Col>
-                        <Form.Control
-                          type="text"
-                          placeholder="Line 2"
-                          onChange={(e) => setLine2(e.target.value)}
-                          value={line2}
-                        ></Form.Control>
-                      </Col>
-                    </Row>
-                    <Row>
-                      <Col>
-                        <Form.Control
-                          type="text"
-                          placeholder="City"
-                          onChange={(e) => setCity(e.target.value)}
-                          value={city}
-                        ></Form.Control>
-                      </Col>
-                    </Row>
-                  </Form.Group>
-                </Form>
+                <Form.Group>
+                  <Row>
+                    <Col>
+                      <Form.Control
+                        type="text"
+                        placeholder="First Name"
+                        onChange={(e) => setNamea(e.target.value)}
+                        value={namea}
+                      ></Form.Control>
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col>
+                      <Form.Control
+                        type="text"
+                        placeholder="Last Name"
+                        onChange={(e) => setNameb(e.target.value)}
+                        value={nameb}
+                      ></Form.Control>
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col>
+                      <Form.Label>Address:</Form.Label>
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col>
+                      <Form.Control
+                        type="text"
+                        placeholder="Line 1"
+                        onChange={(e) => setLine1(e.target.value)}
+                        value={line1}
+                      ></Form.Control>
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col>
+                      <Form.Control
+                        type="text"
+                        placeholder="Line 2"
+                        onChange={(e) => setLine2(e.target.value)}
+                        value={line2}
+                      ></Form.Control>
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col>
+                      <Form.Control
+                        type="text"
+                        placeholder="City"
+                        onChange={(e) => setCity(e.target.value)}
+                        value={city}
+                      ></Form.Control>
+                    </Col>
+                  </Row>
+                </Form.Group>
               </Col>
             </Row>
           </Card>
         </Col>
-        <Col md={4}>
+        <Col md={3}>
           <Row>
             <Col>
               <Button>Submit</Button>
@@ -91,7 +89,7 @@ export const Details = () => {
           </Row>
           <Row>
             <Col>
-              <Card>
+              <Card id="details">
                 <Row>
                   <Col>
                     <h3>{`${namea} ${nameb}`}</h3>
@@ -110,7 +108,7 @@ export const Details = () => {
             </Col>
           </Row>
         </Col>
-        <Col md={2}></Col>
+        <Col md={3}></Col>
       </Row>
     </div>
   );
