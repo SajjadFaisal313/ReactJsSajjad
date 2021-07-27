@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Row, Col, Form, Button, Card } from "react-bootstrap";
 
+import "./Details.css"
+
 import { EmployeeReducer } from "../Reducers/EmployeeReducer";
 export const Details = () => {
   const { firstName, lastName, firstLine, secLine, cityName } =
