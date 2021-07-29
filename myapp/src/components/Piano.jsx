@@ -7,6 +7,8 @@ export const Piano = () => {
   const audio = new Audio(`Pianosounds/${bit}.mp3`);
   audio.play();
   };
+
+  document.addEventListener("keydown")
   return (
     <div>
       <Row>
