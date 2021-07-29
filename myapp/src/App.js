@@ -12,8 +12,8 @@ function App() {
     {/* <Details /> */}
     {/* <FormTable/> */}
     {/* <Toggle/> */}
-    {/* <Piano/> */}
-    <Audioplayer/>
+    <Piano/>
+    {/* <Audioplayer/> */}
   </div>
   );
 }
