@@ -1,0 +1,11 @@
+.InfocardPtcard {
+  margin: 20px;
+  padding: 10px;
+  background-color: rgb(138, 221, 241) !important;
+}
+.InfocardChcard {
+  margin: 10px;
+  padding: 10px;
+  background-color: rgb(0, 23, 99) !important;
+  color: aliceblue;
+}
