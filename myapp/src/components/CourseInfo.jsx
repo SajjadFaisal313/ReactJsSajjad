@@ -1,3 +1,5 @@
+import React from "react";
+
 export const CourseInfo = ({ CourseName, Institute, Contact, City }) => {
   return (
     <div>
