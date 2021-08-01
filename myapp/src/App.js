@@ -1,11 +1,12 @@
 import './App.css';
 import React from 'react';
-import { EmiCal } from './components/Calculator';
+// import { EmiCal } from './components/Calculator';
 // import { Counter } from './components/Counter';
 // import { Audioplayer } from './components/Audioplayer';
 // import { Details } from './components/Details';
 // import { FormTable } from './components/FormTable';
-import { Toggle } from './components/Toggle';
+// import { Toggle } from './components/Toggle';
+import { MyInfo } from './components/MyInfo';
 // import { Piano } from './components/Piano';
 // import { CourseInfo } from './components/CourseInfo';
 // import { CourseInfoParent } from './components/CourseInfoParent';
@@ -15,7 +16,7 @@ import { Toggle } from './components/Toggle';
 function App() {
   return (
     <div className="App">
-      <Toggle/>
+      <MyInfo/>
     </div>
   );
 }
