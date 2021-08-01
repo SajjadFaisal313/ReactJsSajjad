@@ -1,5 +1,6 @@
 import './App.css';
-import { Audioplayer } from './components/Audioplayer';
+import { Counter } from './components/Counter';
+// import { Audioplayer } from './components/Audioplayer';
 // import { Details } from './components/Details';
 // import { FormTable } from './components/FormTable';
 // import { Toggle } from './components/Toggle';
@@ -12,7 +13,7 @@ import { Audioplayer } from './components/Audioplayer';
 function App() {
   return (
     <div className="App">
-      <Audioplayer />
+      <Counter/>
     </div>
   );
 }
