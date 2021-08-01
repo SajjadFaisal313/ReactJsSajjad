@@ -3,7 +3,7 @@ import { Button, Row, Col, Card } from "react-bootstrap";
 import "./Audioplayer.css";
 
 export const Audioplayer = () => {
-  const audio = new Audio("audio1.mp3");
+  const audio = new Audio("audio2.mp3");
   const handleAudioplayer = () => {
     audio.play();
   };
