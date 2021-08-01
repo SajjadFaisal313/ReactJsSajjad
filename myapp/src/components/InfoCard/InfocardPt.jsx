@@ -8,7 +8,7 @@ export const InfocardPt = () => {
   const [empArr, setEmpArr] = useState(InfocardReducer.Data);
   const [searchText, setSearchText] = useState("");
   useEffect(() => {
-    const filterArr = empArr.filter(
+    const filterempArr = empArr.filter(
       (item) =>
         item.firstName.toLowerCase().includes(searchText.toLowerCase()) ||
         item.lastName.toLowerCase().includes(searchText.toLowerCase()) ||
@@ -17,7 +17,7 @@ export const InfocardPt = () => {
         item.cityName.toLowerCase().includes(searchText.toLowerCase())
     );
     if (searchText === "") setEmpArr(InfocardReducer.Data);
-    else setEmpArr(filterArr);
+    else setEmpArr(filterempArr);
   }, [searchText]);
   return (
     <Card className="InfocardPtcard">
