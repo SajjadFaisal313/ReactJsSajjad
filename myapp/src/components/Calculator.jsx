@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Form, Button, Card, Row, Col } from "react-bootstrap";
-import "./EmiCal.css";
+// import "./EmiCal.css";
 
 export const EmiCal = () => {
   const [p, setP] = useState(0);
