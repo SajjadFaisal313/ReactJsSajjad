@@ -1,0 +1,16 @@
+.nav-item{
+    background-color: navy !important;
+    color: #ffffff !important;
+}
+.nav-tabs .nav-link{
+    color: #ffffff;
+    font-weight: bolder;
+
+}
+.active{
+    background-color: orange;
+}
+.tab-content{
+    background-color: orange;
+    padding: 10px;
+}
