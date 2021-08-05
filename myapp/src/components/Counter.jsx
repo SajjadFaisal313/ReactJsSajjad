@@ -1,8 +1,14 @@
 import React, { useState } from "react";
 import { Button } from "react-bootstrap";
+import axios from "axios"
 
 export const Counter = () => {
   const [cntr, setCntr] = useState(0);
+  const handleApi = () => {
+    axios.get("http://localhost:4000/emp").then(res=>{
+      console.log()
+    })
+  }
   return (
     <div>
       <table>
