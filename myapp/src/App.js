@@ -9,12 +9,13 @@ import { Navigation } from "./components/Routes/Navigation/Navigation";
 import { Services } from "./components/Routes/Services";
 import { Login } from "./components/Login"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Clock } from './components/Clock';
 
 
 function App() {
   return (
     <div className="App">
-         <Router>
+         {/* <Router>
       <Navigation/>
       <Switch>
       <div>
@@ -26,7 +27,8 @@ function App() {
         <Route exact path="/"><Login/></Route>
       </div>
       </Switch>
-    </Router>
+    </Router> */}
+    <Clock/>
     </div>
   );
 }

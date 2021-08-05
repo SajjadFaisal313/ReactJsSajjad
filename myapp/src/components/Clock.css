@@ -1,0 +1,11 @@
+.clock {
+  background-color: rgb(255, 228, 193) !important;
+  color: darkblue;
+  margin: 10px;
+  padding: 7px;
+  text-align: center;
+}
+.clock span {
+  color: darkblue;
+  font-size: 200%;
+}
