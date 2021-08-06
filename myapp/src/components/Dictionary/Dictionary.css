@@ -1,0 +1,13 @@
+.dictDiv {
+  text-align: center;
+  margin: 30px;
+  padding: 12px;
+}
+.dictmaincard {
+  height: 450px;
+  margin-left: 300px;
+  margin-right: 300px;
+  padding: 10px;
+  box-shadow: 0 0 10px black;
+}
+
