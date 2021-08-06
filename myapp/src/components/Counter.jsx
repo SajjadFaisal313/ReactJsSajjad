@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import { Button } from "react-bootstrap";
-import axios from "axios"
+import axios from "axios";
 
 export const Counter = () => {
   const [cntr, setCntr] = useState(0);
   const handleApi = () => {
-    axios.get("http://localhost:4000/emp").then(res=>{
-      console.log()
-    })
-  }
+    axios.get("http://localhost:4000").then((res) => {
+      console.log(res.data.data[2]);
+    });
+  };
   return (
     <div>
       <table>
@@ -31,6 +31,7 @@ export const Counter = () => {
             >
               +
             </Button>
+            <Button onClick={handleApi}>call my api</Button>
           </td>
         </tr>
       </table>
