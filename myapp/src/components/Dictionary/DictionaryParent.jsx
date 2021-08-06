@@ -8,18 +8,21 @@ import {
   Dropdown,
   Button,
 } from "react-bootstrap";
-import { Meaning } from "./Meaning";
+import { MeaningList } from "./MeaningList";
 import { Pronounciation } from "./Pronounciation";
 import "./Dictionary.css";
 import { Synonyms } from "./Synonyms";
 import axios from "axios";
+import { useState } from "react";
 
 export const DictionaryParent = () => {
+  const [resData, setResData] = useState([]);
   const handleSearch = () => {
     axios
       .get("https://api.dictionaryapi.dev/api/v2/entries/en_US/rate")
       .then((res) => {
-        console.log(res);
+        console.log(res.data);
+        setResData([...res.data]);
       });
   };
   return (
@@ -37,12 +40,13 @@ export const DictionaryParent = () => {
               <Button onClick={handleSearch}>Search</Button>
             </Row>
             <Row>
-              {/* <h4>Pronounciation</h4> */}
-              <Pronounciation /> <Button className="palybtn">O</Button>
+              <Pronounciation /> <Button className="palybtn">Listen</Button>
             </Row>
             <Row>
-              {/* <h4>Meaning</h4> */}
-              <Meaning />
+              {resData.map(
+                (item) =>
+                  item.meanings.length > 0 && <MeaningList item={item} />
+              )}
             </Row>
           </Col>
           <Col md={3}>
