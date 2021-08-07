@@ -6,7 +6,7 @@ export const MeaningList = ({ item }) => {
   return (
     <div className="meaningcard">
       {item.meanings.map((means) => (
-        <Meaning />
+        <Meaning means={means} />
       ))}
     </div>
   );

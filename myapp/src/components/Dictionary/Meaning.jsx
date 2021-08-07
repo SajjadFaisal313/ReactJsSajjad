@@ -1,11 +1,21 @@
 import React from "react";
 import { Card } from "react-bootstrap";
 
-export const Meaning = () => {
+export const Meaning = ({ means }) => {
   return (
     <div className="meaningcard">
-      <h4>Meaning</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      <i>
+        <h4>{means.partsOfSpeech}</h4>
+      </i>
+      {means.definitions.map((def, index) => (
+        <p>
+          <span>
+            <i>
+              {(index = 1)}.{def.definition}
+            </i>
+          </span>
+        </p>
+      ))}
     </div>
   );
 };
