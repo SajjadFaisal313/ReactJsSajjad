@@ -7,11 +7,12 @@ import React from 'react';
 // import { Home } from "./components/Routes/Home";
 // import { Navigation } from "./components/Routes/Navigation/Navigation";
 // import { Services } from "./components/Routes/Services";
-// import { Login } from "./components/Login"
 // import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 // import { Clock } from './components/Clock';
 // import { Counter } from './components/Counter';
-import { DictionaryParent } from './components/Dictionary/DictionaryParent';
+// import { DictionaryParent } from './components/Dictionary/DictionaryParent';
+// import { Login } from './components/Login';
+import { EmiCal, Login } from './components/Calculator';
 
 
 function App() {
@@ -30,7 +31,7 @@ function App() {
       </div>
       </Switch>
     </Router> */}
-    <DictionaryParent/>
+    <EmiCal/>
     </div>
   );
 }
