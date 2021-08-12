@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect } from "react";
 import { useHistory } from "react-router-dom";
-import { userData } from "../config";
+import { userData } from "../../config";
 
 export const Courses = () => {
   const history = useHistory();

@@ -4,12 +4,15 @@ import { useState } from "react";
 import { Button, Row, Col, Form, Card } from "react-bootstrap";
 import "./Login.css";
 import { userData } from "./config";
+import { useRef } from "react";
 
 export const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassord] = useState("");
   const [valid, setValid] = useState(true);
   const [isSuccess, SetisSuccess] = useState(false);
+  const eleUserName = useRef();
+  const eleUserPass = useRef();
 
   useEffect(() => {
     if (username.length >= 6 && password.length >= 6) setValid(false);
@@ -17,6 +20,15 @@ export const Login = () => {
       SetisSuccess(true);
     } else setValid(true);
   }, [username, password]);
+
+  useEffect(() => {
+    if (localStorage.getItem("userName")) {
+      eleUserName.current.value = localStorage.getItem("userName");
+      eleUserPass.current.focus();
+    } else {
+      eleUserName.current.focus();
+    }
+  }, []);
 
   return (
     <div>
@@ -32,6 +44,7 @@ export const Login = () => {
                   type="text"
                   onChange={(e) => setUsername(e.target.value)}
                   placeholder="User Name"
+                  ref={eleUserName}
                 ></Form.Control>
               </Col>
             </Row>
@@ -41,6 +54,7 @@ export const Login = () => {
                   type="password"
                   onChange={(e) => setPassord(e.target.value)}
                   placeholder="Password"
+                  ref={eleUserPass}
                 ></Form.Control>
               </Col>
             </Row>
