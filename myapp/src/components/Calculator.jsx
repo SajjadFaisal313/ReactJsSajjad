@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Form, Button, Card, Row, Col } from "react-bootstrap";
 // import "./EmiCal.css";
 
@@ -13,6 +13,9 @@ export const EmiCal = () => {
     const emiLocal = Math.ceil(repayAmount / (n * 12));
     setEmi(emiLocal);
   };
+  useEffect(() => {
+    handleCalEMI();
+  }, [p, n, r]);
   return (
     <div>
       <Card className="Calc">
