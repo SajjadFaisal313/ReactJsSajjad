@@ -1,5 +1,5 @@
-import './App.css';
-import React from 'react';
+import "./App.css";
+import React from "react";
 
 // import { AboutUs } from "./components/Routes/AboutUs";
 // import { Contact } from "./components/Routes/Contact";
@@ -12,13 +12,13 @@ import React from 'react';
 // import { Counter } from './components/Counter';
 // import { DictionaryParent } from './components/Dictionary/DictionaryParent';
 // import { Login } from './components/Login';
-import { EmiCal, Login } from './components/Calculator';
-
+// import { EmiCal, Login } from './components/Calculator';
+import { FetchingDataFromRedux } from "./components/State/Redux/FetchingDataFromRedux";
 
 function App() {
   return (
     <div className="App">
-         {/* <Router>
+      {/* <Router>
       <Navigation/>
       <Switch>
       <div>
@@ -31,7 +31,7 @@ function App() {
       </div>
       </Switch>
     </Router> */}
-    <EmiCal/>
+      <FetchingDataFromRedux />
     </div>
   );
 }
