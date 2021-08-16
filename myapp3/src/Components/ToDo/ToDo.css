@@ -1,0 +1,22 @@
+.home {
+  background-color: rgb(240, 255, 251) !important;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 0 0 10px black;
+}
+.toDoList {
+  margin: 5px;
+  background-color: rgb(205, 241, 255) !important;
+}
+.addToDo {
+  margin: 5px;
+  padding: 5px;
+  background-color: rgb(251, 255, 202) !important;
+  margin-bottom: 10px;
+}
+.centralCol {
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 0 0 4px black;
+  background-color: rgb(0, 0, 131);
+}
