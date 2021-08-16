@@ -14,6 +14,7 @@ import React from "react";
 // import { Login } from './components/Login';
 // import { EmiCal, Login } from './components/Calculator';
 import { FetchingDataFromRedux } from "./components/State/Redux/FetchingDataFromRedux";
+import EmpDetails from "./components/State/Redux/EmpDetails";
 
 function App() {
   return (
@@ -31,7 +32,7 @@ function App() {
       </div>
       </Switch>
     </Router> */}
-      <FetchingDataFromRedux />
+      <EmpDetails />
     </div>
   );
 }
