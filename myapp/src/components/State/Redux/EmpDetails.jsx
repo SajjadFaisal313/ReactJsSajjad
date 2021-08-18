@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Card, Button, Form, Row, Image } from "react-bootstrap";
 import { useSelector, useDispatch } from "react-redux";
-import { getEmpDetails } from "../Components/State/selectors/EmpDetailsSelector";
-import { AddEmp } from "../Components/State/Action/EmpDetailsAction";
+import { getEmpDetails } from "../Selector/EmpDetailsSelector";
+import { AddEmp } from "../Action/EmpDetailsAction";
 
 const EmpDetails = () => {
   const selector = useSelector(getEmpDetails);
