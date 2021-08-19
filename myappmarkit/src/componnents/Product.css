@@ -1,0 +1,16 @@
+.productitem {
+  background-color: aquamarine;
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+}
+.productlist {
+  background-color: brown !important;
+  margin: 10px;
+  padding: 10px;
+}
+.TopNav {
+  background-color: burlywood !important;
+  margin: 5px;
+  padding: 5px;
+}
