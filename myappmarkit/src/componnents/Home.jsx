@@ -1,9 +1,8 @@
-import React from "react";
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { ProductList } from "./ProductList";
 import { getProducts } from "../services/products";
 import { TopNav } from "./TopNav";
+import { ProductList } from "./ProductList";
 import "./Product.css";
 
 export const Home = () => {

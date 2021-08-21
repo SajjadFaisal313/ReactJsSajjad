@@ -8,7 +8,7 @@ export const TopNav = () => {
     <Card className="TopNav">
       <Row>
         <Col md={10}></Col>
-        <Col>Cart:{products.length} </Col>
+        <Col>Cart: {products.length} </Col>
       </Row>
     </Card>
   );
