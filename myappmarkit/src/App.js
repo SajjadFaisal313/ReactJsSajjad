@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Provider, useDispatch } from "react-redux";
+import { Provider } from "react-redux";
 import { configStore } from "./state/store/configStore";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Home } from "./componnents/Home";

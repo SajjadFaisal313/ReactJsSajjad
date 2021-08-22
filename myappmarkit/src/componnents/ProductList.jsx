@@ -14,13 +14,15 @@ export const ProductList = () => {
   }, [myProducts]);
   return (
     <Card className="productlist">
-      <Row>
-        {prods.map((item) => (
-          <Col>
-            <ProductItem />
-          </Col>
-        ))}
-      </Row>
+      {prods.length > 1 && (
+        <Row>
+          {prods.map((item) => (
+            <Col>
+              <ProductItem item={item} />
+            </Col>
+          ))}
+        </Row>
+      )}
     </Card>
   );
 };
