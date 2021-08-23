@@ -1,14 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import { useSelector } from "react-redux";
-import { Row, Col, Card } from "react-bootstrap";
+import { Row, Col, Card, Form } from "react-bootstrap";
+import { useEffect } from "react";
 
 export const TopNav = () => {
+  const [searchText, setSearchText] = useState("");
   const products = useSelector((state) => state.productReducer.product);
+  useEffect(() => {}, [searchText]);
   return (
     <Card className="TopNav">
       <Row>
-        <Col md={10}></Col>
-        <Col>Cart: {products.length} </Col>
+        <Col md={7}></Col>
+        <Col md={3}>
+          <Form.Control
+            type="text"
+            onChange={(e) => setSearchText(e.target.value)}
+          />
+        </Col>
+        <Col md={2}>Cart: {products.length} </Col>
       </Row>
     </Card>
   );

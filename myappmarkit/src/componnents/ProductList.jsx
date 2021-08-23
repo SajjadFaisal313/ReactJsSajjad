@@ -17,7 +17,7 @@ export const ProductList = () => {
       {prods.length > 1 && (
         <Row>
           {prods.map((item) => (
-            <Col>
+            <Col md={3}>
               <ProductItem item={item} />
             </Col>
           ))}
