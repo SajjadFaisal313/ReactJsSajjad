@@ -6,6 +6,8 @@ import { ProductList } from "./ProductList";
 import "./Product.css";
 
 export const Home = () => {
+  const [searchText, setSearchText] = useState("");
+
   const dispatch = useDispatch();
   const [pr, setPr] = useState([]);
   const allProducts = async () => {
@@ -23,8 +25,8 @@ export const Home = () => {
   }, []);
   return (
     <div>
-      <TopNav />
-      {pr && <ProductList />}
+      <TopNav setSearchText={setSearchText} />
+      {pr && <ProductList searchText={searchText} />}
     </div>
   );
 };

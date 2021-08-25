@@ -3,10 +3,8 @@ import { useSelector } from "react-redux";
 import { Row, Col, Card, Form } from "react-bootstrap";
 import { useEffect } from "react";
 
-export const TopNav = () => {
-  const [searchText, setSearchText] = useState("");
+export const TopNav = ({ setSearchText }) => {
   const products = useSelector((state) => state.productReducer.product);
-  useEffect(() => {}, [searchText]);
   return (
     <Card className="TopNav">
       <Row>

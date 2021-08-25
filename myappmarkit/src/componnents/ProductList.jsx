@@ -1,28 +1,31 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
 import { Card, Row, Col } from "react-bootstrap";
 import { ProductItem } from "./ProductItem";
 
-export const ProductList = () => {
+export const ProductList = ({ searchText }) => {
   const myProducts = useSelector((state) => state.productReducer.product);
-  console.log("=-=-=-=-=>>>>>>>>>>", myProducts);
   const [prods, setProds] = useState([]);
-
   useEffect(() => {
-    console.log("====>", myProducts);
+    if (searchText !== "") {
+      const filteredProducts = myProducts.filter((item) =>
+        item.title.toUpperCase().includes(searchText.toUpperCase())
+      );
+      setProds([...filteredProducts]);
+    }
+  }, [searchText]);
+  useEffect(() => {
     setProds([...myProducts]);
   }, [myProducts]);
   return (
     <Card className="productlist">
-      {prods.length > 1 && (
-        <Row>
-          {prods.map((item) => (
-            <Col md={3}>
-              <ProductItem item={item} />
-            </Col>
-          ))}
-        </Row>
-      )}
+      <Row>
+        {prods.map((item) => (
+          <Col md={3}>
+            <ProductItem item={item} />
+          </Col>
+        ))}
+      </Row>
     </Card>
   );
 };
