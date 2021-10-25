@@ -15,6 +15,8 @@ import { Login } from "./components/Login";
 // import { EmiCal, Login } from './components/Calculator';
 // import { FetchingDataFromRedux } from "./components/State/Redux/FetchingDataFromRedux";
 import EmpDetails from "./components/State/Redux/EmpDetails";
+import { Details } from "./components/Details";
+import { FormTable } from "./components/FormTable";
 
 function App() {
   return (
@@ -44,7 +46,8 @@ function App() {
           </div>
         </Switch>
       </Router> */}
-      <EmpDetails />
+      {/* <EmpDetails /> */}
+      <Details />
     </div>
   );
 }

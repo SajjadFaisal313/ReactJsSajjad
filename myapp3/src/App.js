@@ -1,12 +1,16 @@
 import React from "react";
-import { Home } from "./Components/Home";
+import { ConfigureStore } from "./state/Store/ConfigureStore";
+import { Provider } from "react-redux";
 import "bootstrap/dist/css/bootstrap.min.css";
-function App() {
+import { Task } from "./Components/ReactTask/Task";
+
+export const App = () => {
+  const store = ConfigureStore();
   return (
     <React.Fragment className="App">
-      <Home />
+      <Provider store={store}>
+        <Task />
+      </Provider>
     </React.Fragment>
   );
-}
-
-export default App;
+};
