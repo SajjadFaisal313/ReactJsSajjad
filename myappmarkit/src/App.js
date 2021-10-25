@@ -8,11 +8,11 @@ function App() {
   const localStore = configStore();
 
   return (
-    <div>
+    <React.Fragment>
       <Provider store={localStore}>
         <Home />
       </Provider>
-    </div>
+    </React.Fragment>
   );
 }
 
